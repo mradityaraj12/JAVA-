@@ -1,0 +1,61 @@
+
+/**
+ * ! Enter the Number Of Row IS :
+7
+      A 
+    B B B
+  C C C C C
+D D D D D D D
+  C C C C C
+    B B B
+      A 
+      
+ */
+
+import java.util.Scanner;
+
+public class Q177 {
+
+    public static void main(String[] args) {
+        Scanner Sc = new Scanner(System.in);
+        System.out.println("Enter the Number Of Row IS :");
+        int n = Sc.nextInt();
+        printPattern(n);
+
+    }
+
+    public static void printPattern(int n) {
+        int star = 1;
+        int rowMid = n / 2 + 1;
+        int space = n / 2;
+
+        int num = 1 + 64;
+
+        for (int i = 1; i <= n; i++) {
+
+            for (int j = 1; j <= space; j++)
+                System.out.print("  ");
+
+            for (int j = 1; j <= star; j++) {
+
+                System.out.print((char) num + " ");
+
+            }
+            if (i < rowMid) {
+                star += 2;
+                space--;
+
+                num++;
+
+            } else {
+                star -= 2;
+                space++;
+
+                num--;
+
+            }
+            System.out.println();
+        }
+
+    }
+}
