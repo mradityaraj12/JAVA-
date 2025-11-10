@@ -1,0 +1,23 @@
+
+class program3{
+     public static void main(String[] args){
+       int[] nums={10, 20, 25, 45, 15, 78, 85, 40, 50};
+       acessEvenElement(nums);
+          
+
+       
+}
+  public static void acessEvenElement(int[] a){
+          int count = 0;
+         for(int i =0; i <a.length;i++)
+            if(a[i]%2==0){
+              System.out.print(a[i] +" ");
+                   count++;
+      }
+         System.out.println("\n Total Even Element are :" + count);
+
+}  
+         
+
+
+}
