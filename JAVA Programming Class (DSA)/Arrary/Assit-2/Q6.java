@@ -1,27 +1,23 @@
 
-class Q5{
-    public static void main(String[] args){
-     String[] names = {"Mohan", "Aditya", "Raj", "Madhavi", "Rohan"};
-        
-       
-       
-          System.out.println("String Having Even number of Characters Are:");
-               displayValues(names);
-          
-            
-        
-                 
-}
-  public static void displayValues(String[] names){
-           int count=0;
-         for(String name:names){
-            if(name.length() % 2 == 0){
-                  System.out.println(name);
-                    count++;
-           }
-      }
+class Q6 {
+  public static void main(String[] args) {
+    int[] a = { 2, 5, 4, 3, 6 };
 
-    System.out.println("Total Counts Are :" + count);
+    System.out.println("The Resultant Array Is:");
+    ChangeValues(a);
+
+  }
+
+  public static void ChangeValues(int[] a) {
+    int sum = 0;
+    for (int x : a) {
+      sum = sum + x;
+    }
+
+    for (int i = 0; i < a.length; i++) {
+      a[i] = sum - a[i];
+      System.out.print(a[i] + "  ");
+    }
 
   }
 
