@@ -15,9 +15,9 @@ public class Q45 {
             if (num > max) {
                 secondMax = max;
                 max = num;
-            } else if (num > secondMax && num != max) {
+            } else if (num > secondMax && num != max)
                 secondMax = num;
-            }
+
         }
 
         return secondMax;

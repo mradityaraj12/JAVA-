@@ -15,12 +15,15 @@ public class Q46 {
             if (num < min) {
                 secondmin = min;
                 min = num;
-            } else if (num < secondmin && num > min) {
+            } else if (num < secondmin && num != min) {
                 secondmin = num;
             }
         }
 
-        return secondmin;
+        if (secondmin != Integer.MAX_VALUE)
+            return secondmin;
+        else
+            return secondmin;
 
     }
 
