@@ -27,7 +27,7 @@ public class Q48 {
         System.out.println("Element\tFrequency");
         for (int i = 0; i < frequency.length; i++) {
             if (frequency[i] > 0) {
-                System.out.println((i + min) + "\t" + frequency[i]);
+                System.out.println((i + min) + " is  " + frequency[i] + "  times");
             }
         }
     }
