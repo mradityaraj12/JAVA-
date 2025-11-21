@@ -1,27 +1,28 @@
-public class Q53 {
+public class Q54 {
     public static void main(String[] args) {
-        int[] a = { 12, 200, 12, 18, 15, 18, 12, 12 };
-        RemoveDuplicateElement(a);
+        int[] a = { 8, 5, 7, 8, 8, 5, 10, 8, 10, 6, 6 };
+        UniqueElement(a);
 
     }
 
-    public static void RemoveDuplicateElement(int[] a) {
+    public static void UniqueElement(int[] a) {
         int max = a[0], min = a[0];
         for (int x : a) {
-            if (x > max) {
+            if (x > max)
                 max = x;
-            } else if (x < min) {
+            else if (x < min)
                 min = x;
-            }
+
         }
         int[] freq = new int[max - min + 1];
         for (int x : a) {
             freq[x - min]++;
+
         }
         for (int i = 0; i < freq.length; i++) {
-            if (freq[i] > 0) {
+            if (freq[i] == 1)
                 System.out.print((i + min) + " ");
-            }
+
         }
     }
 

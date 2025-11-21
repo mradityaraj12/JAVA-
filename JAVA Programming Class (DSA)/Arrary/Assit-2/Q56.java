@@ -1,11 +1,11 @@
-public class 52  {
+public class Q56 {
     public static void main(String[] args) {
-        int[] a = { 8, 5, 7, 8, 8, 5, 10, 8, 10, 6, 6 };
-        UniqueElement(a);
+        int[] a = { 5, 6, 6, 7, 8, 5, 7, 8, 7, 10, 7 };
+        DublicateElements(a);
 
     }
 
-    public static void UniqueElement(int[] a) {
+    public static void DublicateElements(int[] a) {
         int max = a[0], min = a[0];
         for (int x : a) {
             if (x > max)
@@ -19,10 +19,10 @@ public class 52  {
             freq[x - min]++;
 
         }
-        for (int i = 0; i < freq.length; i++) {
-            if (freq[i] == 1)
-                System.out.print((i + min) + " ");
 
+        for (int i = 0; i < freq.length; i++) {
+            if (freq[i] > 1)
+                System.out.print((i + min) + " ");
         }
     }
 
