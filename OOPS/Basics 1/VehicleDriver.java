@@ -15,7 +15,8 @@ class VehicleDriver{
 
 
               String details1=v1.getDetails();
-              System.out.println(details1);
+             //  System.out.println(details1);
+                 System.out.println(v1.getDetails());
               System.out.println(v2.getDetails());
               System.out.println(v3.getDetails());
 

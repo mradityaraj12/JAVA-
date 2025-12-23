@@ -1,6 +1,6 @@
 public class Q52 {
     public static void main(String[] args) {
-        int[] a = { 8, 5, 7, 8, 8, 5, 7, 10, 8, 10, 6 };
+        int[] a = { 8, 5, 7, 8, 8, 5, 7, 10, 8, 10, 6, 9 };
         Frequency(a);
 
     }
